@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.blue-cert-outer {
+  position: relative;
+  width: 900px;
+  min-height: 420px;
+  margin: 100px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  border: 4px solid #1d4ed8;
+  overflow: hidden;
+  padding: 0;
+}
+
+.blue-corner {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  z-index: 2;
+  pointer-events: none;
+}
+.blue-corner-topright {
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, #1d4ed8 60%, #e0eaff 100%);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.blue-corner-bottomleft {
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(315deg, #1d4ed8 60%, #e0eaff 100%);
+  clip-path: polygon(0 100%, 0 0, 100% 100%);
+}
+
+.blue-badge {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 50%;
+  border: 3px solid #1d4ed8;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.blue-badge-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin-bottom: 4px;
+}
+.blue-badge-text {
+  font-size: 12px;
+  color: #1d4ed8;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.blue-cert-content {
+  position: relative;
+  z-index: 4;
+  padding: 50px 40px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+}
+
+.blue-cert-title {
+  font-size: 2rem;
+  color: #1d4ed8;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.blue-cert-presented {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.blue-cert-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.1rem;
+  color: #1d4ed8;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.blue-cert-body {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 28px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.blue-cert-signatures {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 24px auto 0 auto;
+  gap: 0;
+}
+.blue-cert-signature-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+}
+.blue-cert-signature-line {
+  width: 100%;
+  height: 2px;
+  background: #1d4ed8;
+  margin-bottom: 6px;
+}
+.blue-cert-signature-label {
+  font-size: 1rem;
+  color: #1d4ed8;
+  letter-spacing: 1px;
+}
+
+.blue-cert-id {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #888;
+  text-align: right;
+  width: 100%;
+}
+
+.blue-logo-alone {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  z-index: 3;
+  /* No border, no background, no border-radius */
+}
+
+@media (max-width: 1000px) {
+  .blue-cert-outer {
+    width: 98vw;
+    padding: 0;
+  }
+  .blue-cert-content {
+    padding: 30px 5vw 20px 5vw;
+  }
+}
+@media (max-width: 700px) {
+  .blue-cert-outer {
+    width: 100vw;
+    min-height: 300px;
+    padding: 0;
+  }
+  .blue-cert-content {
+    padding: 20px 2vw 12px 2vw;
+  }
+  .blue-cert-signatures {
+    width: 100%;
+  }
+  .blue-cert-signature-block {
+    width: 100%;
+  }
+}
+
+.certificate-view-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.certificate-actions {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.certificate-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  width: 160px;
+  height: 45px;
+  line-height: 1;
+}
+
+.download-btn, .share-btn {
+  background: linear-gradient(90deg, #2563eb 60%, #1d4ed8 100%);
+  box-shadow: 0 4px 12px rgba(37,99,235,0.2);
+}
+
+.download-btn:hover, .share-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37,99,235,0.3);
+}
+
+@media (max-width: 768px) {
+  .certificate-actions {
+    flex-direction: row;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  
+  .certificate-action-btn {
+    width: 140px;
+    height: 40px;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+} 

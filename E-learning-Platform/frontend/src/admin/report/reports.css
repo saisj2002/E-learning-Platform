@@ -1,0 +1,108 @@
+.student-dashboard111 {
+  padding: 50px;
+  text-align: center;
+  min-height: 55vh;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin: 7%  0% 7% 25%;
+  width: 1100px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.348);
+
+}
+
+.pd1{
+  padding-left:12%;
+}
+
+.report-section {
+  margin: 32px;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 24px 20px;
+  transition: box-shadow 0.2s;
+}
+
+.collapsible-title {
+  font-size: 1.2rem;
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.report-box {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #ffffff;
+  height: 130px;
+  width: 250px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.report-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.report-box p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Table styling for reports */
+.report-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  background: #fafbfc;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.report-table th,
+.report-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.report-table th {
+  background: #f1f3f6;
+  color: #333;
+  font-weight: 600;
+}
+
+.report-table tr:last-child td {
+  border-bottom: none;
+}
+
+.report-table tr:hover {
+  background: #f5faff;
+  transition: background 0.2s;
+}

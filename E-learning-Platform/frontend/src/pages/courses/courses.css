@@ -1,0 +1,84 @@
+.courses {
+  padding: 100px 20px 80px 20px;
+  min-height: 70vh;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courses h2 {
+  font-size: 40px;
+  color: #1d4ed8;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.category-filter {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  border: 2px solid #1d4ed8;
+  border-radius: 8px;
+  background: transparent;
+  color: #1d4ed8;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background: #1d4ed8;
+  color: white;
+}
+
+.category-btn.active {
+  background: #1d4ed8;
+  color: white;
+}
+
+.course-container-for-cource-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  width: 100%;
+  max-width: 1100px;
+  justify-content: space-between;
+  gap: 40px;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.192);
+  border-radius: 15px;
+  padding: 40px 58px 40px 40px;
+  margin: 40px 0px;
+}
+
+.course-container p {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+/* Responsive adjustments for search component */
+@media (max-width: 768px) {
+  .course-container-for-cource-card {
+    padding: 20px;
+  }
+  
+  .category-filter {
+    padding: 0 20px;
+  }
+  
+  .category-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}

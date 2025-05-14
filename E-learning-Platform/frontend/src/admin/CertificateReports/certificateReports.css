@@ -1,0 +1,91 @@
+.certificate-container {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px 200px 70px 225px;
+}
+
+.certificate-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.certificate-title {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.certificate-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.certificate-table th,
+.certificate-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border: 1px solid #ddd;
+  border: 1px solid #ddd;
+}
+
+.certificate-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+  position: sticky;
+  top: 0;
+  border: 2px solid #ddd;
+}
+
+.certificate-table th:last-child,
+.certificate-table td:last-child {
+  
+}
+
+.certificate-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .certificate-container {
+    padding: 10px;
+  }
+  
+  .certificate-card {
+    padding: 15px;
+  }
+  
+  .certificate-table th,
+  .certificate-table td {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+} 

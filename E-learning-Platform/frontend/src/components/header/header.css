@@ -1,0 +1,87 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px 3%;
+  z-index: 10;
+  transition: background-color 0.3s ease-in-out;
+  box-sizing: border-box;
+  height: 65px;
+}
+
+header .logo {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0051ff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+header .link {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+header .link a {
+  text-decoration: none;
+  color: #0051ff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+header .link a:hover {
+  color: #000;
+  transform: scale(1.05);
+}
+
+header .link a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #0051ff;
+  transition: width 0.3s ease;
+  bottom: -5px;
+  left: 0;
+}
+
+header .link a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 3%;
+    height: 60px;
+  }
+
+  header .logo {
+    font-size: 22px;
+  }
+
+  header .link {
+    gap: 1rem;
+  }
+
+  header .link a {
+    font-size: 14px;
+  }
+}

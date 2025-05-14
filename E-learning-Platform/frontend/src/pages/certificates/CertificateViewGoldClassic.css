@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.gold-cert-outer {
+  position: relative;
+  width: 900px;
+  min-height: 600px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  border: 6px solid #222;
+  overflow: hidden;
+  padding: 0;
+}
+
+.gold-corner {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  z-index: 2;
+  pointer-events: none;
+}
+.gold-corner-topright {
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, #222 60%, #e6c36f 100%);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.gold-corner-bottomleft {
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(315deg, #222 60%, #e6c36f 100%);
+  clip-path: polygon(0 100%, 0 0, 100% 100%);
+}
+
+.gold-badge {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+  border: 4px solid #e6c36f;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.gold-badge-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-bottom: 4px;
+}
+.gold-badge-text {
+  font-size: 13px;
+  color: #222;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.gold-cert-content {
+  position: relative;
+  z-index: 4;
+  padding: 70px 60px 40px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
+}
+
+.gold-cert-title {
+  font-size: 2.1rem;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+.gold-cert-presented {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.gold-cert-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.gold-cert-body {
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.gold-cert-signatures {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 40px auto 0 auto;
+  gap: 60px;
+}
+.gold-cert-signature-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+}
+.gold-cert-signature-line {
+  width: 100%;
+  height: 2px;
+  background: #222;
+  margin-bottom: 6px;
+}
+.gold-cert-signature-label {
+  font-size: 1rem;
+  color: #444;
+  letter-spacing: 1px;
+}
+
+.gold-cert-id {
+  margin-top: 32px;
+  font-size: 13px;
+  color: #888;
+  text-align: right;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .gold-cert-outer {
+    width: 98vw;
+    padding: 0;
+  }
+  .gold-cert-content {
+    padding: 60px 10vw 40px 10vw;
+  }
+}
+@media (max-width: 700px) {
+  .gold-cert-outer {
+    width: 100vw;
+    min-height: 400px;
+    padding: 0;
+  }
+  .gold-cert-content {
+    padding: 40px 2vw 24px 2vw;
+  }
+  .gold-cert-signatures {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+  .gold-cert-signature-block {
+    width: 100%;
+  }
+} 

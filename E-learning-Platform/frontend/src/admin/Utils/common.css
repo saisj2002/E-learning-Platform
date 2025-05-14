@@ -1,0 +1,55 @@
+.sidebar {
+  width: 175px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  color: white;
+  border-right: 1px solid gray;
+  background-color: #c4e7ff;
+  margin-top: 35px;
+  
+
+  @media (max-width: 768px) {
+    width: 30px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+      cursor: pointer;
+      padding: 12px;
+
+      @media (max-width: 768px) {
+        padding: 7px;
+      }
+
+      &:hover {
+        background-color: gray;
+      }
+
+      a {
+        display: flex;
+        text-decoration: none;
+        counter-reset: blueviolet;
+
+        span {
+          margin-left: 15px;
+          color:black;
+
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dashboard-admin {
+  display: flex;
+  min-height: 80vh;
+  margin-top: 20px;
+}

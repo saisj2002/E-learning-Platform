@@ -1,0 +1,145 @@
+.ll-certificate-outer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(8px);
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.ll-certificate-outer::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  height: 700px;
+  background-image: var(--certificate-logo-url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  opacity: 0.045;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ll-accent-bar {
+  width: 100%;
+  height: 12px;
+  background: linear-gradient(90deg, #1d4ed8 0%, #0073b1 100%);
+  border-radius: 24px 24px 0 0;
+}
+
+.ll-certificate-inner {
+  position: relative;
+  z-index: 1;
+  padding: 48px 48px 32px 48px;
+  background: transparent;
+  border-radius: 0 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ll-logo {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: #fff;
+}
+
+.ll-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.ll-platform {
+  font-weight: 700;
+  color: #1d4ed8;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.ll-certificate-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 12px 0 8px 0;
+  color: #222;
+}
+
+.ll-congrats {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.ll-course-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+  margin: 18px 0 8px 0;
+}
+
+.ll-details {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+.ll-message {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 32px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.ll-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.ll-signature {
+  text-align: left;
+}
+
+.ll-signature-img {
+  width: 90px;
+  height: auto;
+  margin-bottom: 4px;
+}
+
+.ll-org {
+  text-align: right;
+  font-size: 15px;
+  color: #666;
+}
+
+.ll-cert-id {
+  margin-top: 32px;
+  font-size: 13px;
+  color: #888;
+  text-align: right;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .ll-certificate-inner {
+    padding: 24px 8px 16px 8px;
+  }
+  .ll-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+} 

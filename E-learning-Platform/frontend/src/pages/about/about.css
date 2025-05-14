@@ -1,0 +1,136 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: aliceblue;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* About Page */
+.about {
+  padding: 80px 0;
+  text-align: center;
+  background-color: aliceblue;
+  margin-top: 100px; /* Adjust this based on the height of your navbar */
+}
+
+.about-content {
+  max-width: 90%; /* Increase the width to make the card bigger */
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  transform: translateY(-50px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.about-content h2 u {
+  color: #0051ff;
+}
+
+.about-content hr {
+  width: 60px;
+  height: 4px;
+  background-color: #0051ff;
+  border: none;
+  margin: 20px auto;
+}
+
+.about-content p {
+  font-size: 18px;
+  color: #000;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 30px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.about-content p:hover {
+  color: #333;
+}
+
+/* Hover Effect for Paragraph */
+.about-content p a {
+  color: #0051ff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.about-content p a:hover {
+  color: #003a8c;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-content {
+    padding: 40px;
+  }
+
+  .about-content h2 {
+    font-size: 30px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 30px;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: 20px;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+  }
+
+  .about-content p {
+    font-size: 12px;
+  }
+}
